@@ -2,9 +2,16 @@
 
 ##  Demo story
 
-We want to automate deployment of an API managed by 3scale across multiple environments, using pre-defined pipelines provided by the platform. The delivery pipelines must support environment-specific properties, testing, versioning, and the ability to rollback incomplete or failed deployments.
+Developers deploying Red Hat AMQ on Red Hat OpenShift often wonder how to connect external clients to AMQ Broker using the Transport Layer Security (TLS) protocol, which is an improved successor to the Secure Sockets Layer (SSL) protocol.
 
-This demo is composed of the following components: 
+In this article, you will learn how to do just that. The steps are as follows:
+
+    • Generate TLS credentials.
+    • Install the AMQ Broker Operator.
+    • Deploy an AMQ Broker instance.
+    • Define an Advanced Message Queuing Protocol (AMQP) acceptor that uses TLS.
+    • Create an Anycast address.
+    • Connect an external AMQP client and send and receive messages.
 
 **Preparation**
 
