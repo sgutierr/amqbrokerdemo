@@ -7,6 +7,7 @@ We want to automate deployment of an API managed by 3scale across multiple envir
 This demo is composed of the following components: 
 
 **Preparation**
+
     • oc rsh ex-aao-ss-0
     • oc rsync ex-aao-ss-0:/home/jboss/broker.ks .
     • oc rsync ex-aao-ss-0:/home/jboss/broker.ts .
