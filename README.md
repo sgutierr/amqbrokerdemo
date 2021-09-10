@@ -20,9 +20,9 @@ In this article, you will learn how to do just that. The steps are as follows:
 In terms of files required the objective for implementing one side TLS is obtain these documents : 
 
 
-      • broker1 keystore : broker.ks
-      • amqclient keystore : client.ts
-      • Trustore containing both broker1 and amqclient certtificates : broker.ts
+      • broker1 keystore: broker.ks
+      • amqclient keystore: client.ts
+      • Trustore containing both broker1 and amqclient certtificates: broker.ts
   
 ** Remember keytool is a java tool and it is highly recommended to use the same Java version which uses the AMQ broker pod (JAVA 1.8). 
 
@@ -49,7 +49,7 @@ You need to get these files: broker.ks, broker.ts and amqclient.ks
     • oc create -f conf/ActiveMQArtemis.yaml 
     • oc apply -f conf/addresses.yaml 
     
-**Delete commands to remove the demo**        
+### Delete commands to remove the demo 
 
     • oc delete ActiveMQArtemis ex-aao
     • oc delete secret ex-aao-amqp-secret
