@@ -19,9 +19,9 @@ This demo is composed of the following components:
     • oc apply -f conf/addresses.yaml 
 
 **Delete commands to remove the demo**        
- 
-   • oc delete ActiveMQArtemis ex-aao
-   • oc delete secret ex-aao-amqp-secret
+
+    • oc delete ActiveMQArtemis ex-aao
+    • oc delete secret ex-aao-amqp-secret
  
  
  
