@@ -45,7 +45,12 @@ You need to get these files: broker.ks, broker.ts and amqclient.ks
  See this document: https://developers.redhat.com/blog/2020/08/26/connecting-external-clients-to-red-hat-amq-broker-on-red-hat-openshift#part_3__installing_amq
 
 **Deploying Prometheus for AMQ**
- See this document: https://access.redhat.com/documentation/en-us/red_hat_amq/7.6/html/deploying_amq_broker_on_openshift/assembly_br-broker-monitoring_broker-ocp#assembly_br-monitoring-broker-runtime-data-using-prometheus_broker-ocp
+
+    • cat conf/prometheus-local.yaml | sed -E "s/TARGET_NAMESPACE/appdev-amqbroker/"| oc apply -f -
+    • oc create configmap grafana-dashboards --from-file=conf/dashboards-amq
+    • oc apply -f conf/grafana.yaml
+
+ You need to add a new parameter or a new environment variable: AMQ_ENABLE_METRICS_PLUGIN. Set the value of the variable to true. in the Stateful State of your brokers. Please see more detail this document: https://access.redhat.com/documentation/en-us/red_hat_amq/7.6/html/deploying_amq_broker_on_openshift/assembly_br-broker-monitoring_broker-ocp#assembly_br-monitoring-broker-runtime-data-using-prometheus_broker-ocp
 
 
 **Deploy an AMQ Broker instance defining an acceptor that uses TLS**
