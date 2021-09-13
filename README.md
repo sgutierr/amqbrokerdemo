@@ -41,6 +41,8 @@ You need to get these files: broker.ks, broker.ts and amqclient.ks
     
 
 **Install the AMQ Broker Operator**   
+ 
+ See this document: https://developers.redhat.com/blog/2020/08/26/connecting-external-clients-to-red-hat-amq-broker-on-red-hat-openshift#part_3__installing_amq
 
 **Deploying Prometheus for AMQ**
 
