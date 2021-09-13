@@ -45,6 +45,8 @@ You need to get these files: broker.ks, broker.ts and amqclient.ks
  See this document: https://developers.redhat.com/blog/2020/08/26/connecting-external-clients-to-red-hat-amq-broker-on-red-hat-openshift#part_3__installing_amq
 
 **Deploying Prometheus for AMQ**
+ See this document: https://access.redhat.com/documentation/en-us/red_hat_amq/7.6/html/deploying_amq_broker_on_openshift/assembly_br-broker-monitoring_broker-ocp#assembly_br-monitoring-broker-runtime-data-using-prometheus_broker-ocp
+
 
 **Deploy an AMQ Broker instance defining an acceptor that uses TLS**
  
